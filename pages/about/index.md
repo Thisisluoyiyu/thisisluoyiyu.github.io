@@ -2,14 +2,25 @@
 title: 关于我
 ---
 
-I am developing [Valaxy](https://github.com/YunYouJun/valaxy) - Next Generation Static Blog Framework.
+*Hi，这里是忆雨，也可以叫我小洛*
 
-If you like it, you can sponsor me in [GitHub](https://github.com/sponsors/YunYouJun) or [sponsors.yunyoujun.cn](https://sponsors.yunyoujun.cn).
+不过自己只不过是一个多愁善感的人罢了
 
----
+### 我的性别
 
-我正在开发 [Valaxy](https://github.com/YunYouJun/valaxy) - 下一代静态博客框架。
+女，是一位MTF，正在无证含糖中~第一次含糖是2024.6.10，不过开始剂量足够的hrt是2024.8.2。最开始是因为gd特别严重但是又没有想清楚，思考半年的过程中，有在低剂量服用手头上的意外得到的国补，之后是在瑚姐姐的帮助下，思考清楚了，于是开始了正式的hrt。
 
-如果你喜欢它，你可以在 [GitHub](https://github.com/sponsors/YunYouJun) 或 [sponsors.yunyoujun.cn](https://sponsors.yunyoujun.cn) 赞助我。
+如果能够被叫妹妹或者姐姐是一件很值得开心的事情哦~
 
-Check out the [Valaxy | GitHub](https://github.com/YunYouJun/valaxy) for more details.
+### 我的爱好
+
+我喜欢很多东西，ACGN，摄影，电影，编程，音乐。虽然自己的能力有限，但还是想去试试看。
+
+虽然喜欢的东西很多，但是最开心的还是和志同道合的朋友一起干这些事情呢~
+
+### 我的博客
+
+似乎初衷是想要拿来记录各种感想和经历的，至于技术分享~~虽然就咱的技术也没有什么能够分享的~~咱写在另外一个博客上了。
+
+希望大家能在这里看见咱能成为更好的自己呢~
+
