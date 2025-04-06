@@ -21,8 +21,8 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
     bg_image: {
       enable: true,
-      url: 'https://www.yiurblog.top/background.jpg',
-      dark: 'https://www.yiurblog.top/background.jpg',
+      url: 'https://yiurblog.top/background.jpg',
+      dark: 'https://yiurblog.top/background.jpg',
       opacity: 0.7
     },
     pages: [

@@ -12,12 +12,6 @@ export default defineSiteConfig({
   description: '无人相伴的路，惝恍迷离的舞',
   social: [
     {
-      name: 'RSS',
-      link: '/atom.xml',
-      icon: 'i-ri-rss-line',
-      color: 'orange',
-    },
-    {
       name: 'QQ 群 1050458482',
       link: 'https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi',
       icon: 'i-ri-qq-line',
@@ -25,39 +19,27 @@ export default defineSiteConfig({
     },
     {
       name: 'GitHub',
-      link: 'https://github.com/YunYouJun',
+      link: 'https://github.com/thisisluoyiyu',
       icon: 'i-ri-github-line',
       color: '#6e5494',
     },
     {
-      name: '知乎',
-      link: 'https://www.zhihu.com/people/yunyoujun/',
-      icon: 'i-ri-zhihu-line',
-      color: '#0084FF',
-    },
-    {
       name: '哔哩哔哩',
-      link: 'https://space.bilibili.com/1579790',
+      link: 'https://space.bilibili.com/159435471',
       icon: 'i-ri-bilibili-line',
       color: '#FF8EB3',
     },
     {
       name: 'Twitter',
-      link: 'https://twitter.com/YunYouJun',
+      link: 'https://twitter.com/Luo_yiyu',
       icon: 'i-ri-twitter-x-fill',
       color: 'black',
     },
     {
       name: 'Telegram Channel',
-      link: 'https://t.me/elpsycn',
+      link: 'https://t.me/Luo_yiyu',
       icon: 'i-ri-telegram-line',
       color: '#0088CC',
-    },
-    {
-      name: 'E-Mail',
-      link: 'mailto:me@yunyoujun.cn',
-      icon: 'i-ri-mail-line',
-      color: '#8E71C1',
     },
   ],
 
@@ -74,12 +56,6 @@ export default defineSiteConfig({
         url: 'https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg',
         color: '#00A3EE',
         icon: 'i-ri-alipay-line',
-      },
-      {
-        name: 'QQ 支付',
-        url: 'https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png',
-        color: '#12B7F5',
-        icon: 'i-ri-qq-line',
       },
       {
         name: '微信支付',
