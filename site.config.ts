@@ -6,7 +6,7 @@ export default defineSiteConfig({
   title: '云边的小旅店',
   author: {
     name: '洛忆雨Yiur',
-	  avatar: 'https://www.yiurblog.top/zhizhi.png',
+	  avatar: 'https://www.yiurblog.top/head.png',
   },
   subtitle: '沉海',
   description: '无人相伴的路，惝恍迷离的舞',
