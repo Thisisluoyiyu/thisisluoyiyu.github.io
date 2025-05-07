@@ -35,6 +35,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/关于性别认同--为何想成为药娘呢1': RouteRecordInfo<'/posts/关于性别认同--为何想成为药娘呢1', '/posts/关于性别认同--为何想成为药娘呢1', Record<never, never>, Record<never, never>>,
     '/posts/过去': RouteRecordInfo<'/posts/过去', '/posts/过去', Record<never, never>, Record<never, never>>,
     '/posts/幻梦，死于现实，亦或是软弱': RouteRecordInfo<'/posts/幻梦，死于现实，亦或是软弱', '/posts/幻梦，死于现实，亦或是软弱', Record<never, never>, Record<never, never>>,
+    '/posts/荒原的故事': RouteRecordInfo<'/posts/荒原的故事', '/posts/荒原的故事', Record<never, never>, Record<never, never>>,
     '/posts/决定写一点流水账的日记！': RouteRecordInfo<'/posts/决定写一点流水账的日记！', '/posts/决定写一点流水账的日记！', Record<never, never>, Record<never, never>>,
     '/posts/跨年1': RouteRecordInfo<'/posts/跨年1', '/posts/跨年1', Record<never, never>, Record<never, never>>,
     '/posts/另世我': RouteRecordInfo<'/posts/另世我', '/posts/另世我', Record<never, never>, Record<never, never>>,

@@ -8,12 +8,12 @@ export default defineSiteConfig({
     name: '洛忆雨Yiur',
 	  avatar: 'https://www.yiurblog.top/head.png',
   },
-  subtitle: '沉海',
+  subtitle: '',
   description: '无人相伴的路，惝恍迷离的舞',
   social: [
     {
-      name: 'QQ 群 1050458482',
-      link: 'https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi',
+      name: 'QQ 群',
+      link: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Pi01N7gf8UGCeOauFHmQ0lmrO0NlDjKG&authKey=ReAj4s8B6PVemoefBRZSdHaQsw2mGO5tLwflyIvHKz3EXXaDCVJ6hURt7%2FEmBuOu&noverify=0&group_code=464982077',
       icon: 'i-ri-qq-line',
       color: '#12B7F5',
     },
@@ -44,7 +44,7 @@ export default defineSiteConfig({
   ],
 
   search: {
-    enable: false,
+    enable: true,
   },
 
   sponsor: {
@@ -53,13 +53,13 @@ export default defineSiteConfig({
     methods: [
       {
         name: '支付宝',
-        url: 'https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg',
+        url: ' ',
         color: '#00A3EE',
         icon: 'i-ri-alipay-line',
       },
       {
         name: '微信支付',
-        url: 'https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg',
+        url: ' ',
         color: '#2DC100',
         icon: 'i-ri-wechat-pay-line',
       },
