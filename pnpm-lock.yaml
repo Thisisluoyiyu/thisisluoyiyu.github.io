@@ -14,9 +14,6 @@ importers:
       valaxy:
         specifier: 0.22.17
         version: 0.22.17(@babel/parser@7.27.0)(@nuxt/kit@3.14.1592(rollup@4.40.0))(@types/markdown-it@14.1.2)(@types/node@22.10.1)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(prettier@3.4.1)(rollup@4.40.0)(terser@5.36.0)(tsx@4.19.2)(typescript@5.7.2)(yaml@2.7.1)
-      valaxy-addon-bangumi:
-        specifier: ^0.2.2
-        version: 0.2.2(valaxy@0.22.17(@babel/parser@7.27.0)(@nuxt/kit@3.14.1592(rollup@4.40.0))(@types/markdown-it@14.1.2)(@types/node@22.10.1)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(prettier@3.4.1)(rollup@4.40.0)(terser@5.36.0)(tsx@4.19.2)(typescript@5.7.2)(yaml@2.7.1))
       valaxy-theme-yun:
         specifier: 0.20.6
         version: 0.20.6(rollup@4.40.0)(vue@3.5.13(typescript@5.7.2))
@@ -1579,9 +1576,6 @@ packages:
   beasties@0.2.0:
     resolution: {integrity: sha512-Ljqskqx/tbZagIglYoJIMzH5zgssyp+in9+9sAyh15N22AornBeIDnb8EZ6Rk+6ShfMxd92uO3gfpT0NtZbpow==}
     engines: {node: '>=14.0.0'}
-
-  bilibili-bangumi-component@0.3.1:
-    resolution: {integrity: sha512-RrXCmOKvKeVDXk+VR4oBLvbe20N6Hzjk2dp6SXNle4mlo8ywvERj1pvCQBT7svEkLW9wRw0wNUssuA1PBDdHdA==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -3744,11 +3738,6 @@ packages:
     resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
     hasBin: true
 
-  valaxy-addon-bangumi@0.2.2:
-    resolution: {integrity: sha512-gya2PFf1ysdJw5irHnsS185Mi3+boPYgw+a2bnqgAVEbwMEKmNCOiAkH0C30IYweUdHe/Q6QrFd9PPYEC1dcEg==}
-    peerDependencies:
-      valaxy: latest
-
   valaxy-theme-yun@0.20.6:
     resolution: {integrity: sha512-/hrFlLkx3BYMGDrtEh2THcP4qfXVABghvou/R1WHsjMQfPSr2ekZK/lt4UuAbwhQleaIenncKNY1iNQKt6iXEw==}
 
@@ -5764,8 +5753,6 @@ snapshots:
       picocolors: 1.1.1
       postcss: 8.4.49
       postcss-media-query-parser: 0.2.3
-
-  bilibili-bangumi-component@0.3.1: {}
 
   binary-extensions@2.3.0: {}
 
@@ -8193,11 +8180,6 @@ snapshots:
       punycode: 2.3.1
 
   uuid@11.1.0: {}
-
-  valaxy-addon-bangumi@0.2.2(valaxy@0.22.17(@babel/parser@7.27.0)(@nuxt/kit@3.14.1592(rollup@4.40.0))(@types/markdown-it@14.1.2)(@types/node@22.10.1)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(prettier@3.4.1)(rollup@4.40.0)(terser@5.36.0)(tsx@4.19.2)(typescript@5.7.2)(yaml@2.7.1)):
-    dependencies:
-      bilibili-bangumi-component: 0.3.1
-      valaxy: 0.22.17(@babel/parser@7.27.0)(@nuxt/kit@3.14.1592(rollup@4.40.0))(@types/markdown-it@14.1.2)(@types/node@22.10.1)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(prettier@3.4.1)(rollup@4.40.0)(terser@5.36.0)(tsx@4.19.2)(typescript@5.7.2)(yaml@2.7.1)
 
   valaxy-theme-yun@0.20.6(rollup@4.40.0)(vue@3.5.13(typescript@5.7.2)):
     dependencies:
