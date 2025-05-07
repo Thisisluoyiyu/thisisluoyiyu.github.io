@@ -12,6 +12,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "valaxy": "0.22.17",
     "valaxy-addon-bangumi": "^0.2.2",
     "valaxy-theme-yun": "0.20.6",

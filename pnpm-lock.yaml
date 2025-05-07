@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      date-fns:
+        specifier: ^4.1.0
+        version: 4.1.0
       valaxy:
         specifier: 0.22.17
         version: 0.22.17(@babel/parser@7.27.0)(@nuxt/kit@3.14.1592(rollup@4.40.0))(@types/markdown-it@14.1.2)(@types/node@22.10.1)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(prettier@3.4.1)(rollup@4.40.0)(terser@5.36.0)(tsx@4.19.2)(typescript@5.7.2)(yaml@2.7.1)
@@ -1981,6 +1984,9 @@ packages:
   data-urls@5.0.0:
     resolution: {integrity: sha512-ZYP5VBHshaDAiVZxjbRVcFJpc+4xGgT0bK3vzy1HLN8jTO975HEbuYzZJcHoQEY5K1a0z8YayJkyVETa08eNTg==}
     engines: {node: '>=18'}
+
+  date-fns@4.1.0:
+    resolution: {integrity: sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==}
 
   dayjs@1.11.13:
     resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
@@ -6204,6 +6210,8 @@ snapshots:
     dependencies:
       whatwg-mimetype: 4.0.0
       whatwg-url: 14.2.0
+
+  date-fns@4.1.0: {}
 
   dayjs@1.11.13: {}
 
