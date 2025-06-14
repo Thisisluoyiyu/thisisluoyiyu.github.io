@@ -12,7 +12,8 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
-
+    permissions:
+      contents: write
     strategy:
       matrix:
         node-version: [lts/*]
