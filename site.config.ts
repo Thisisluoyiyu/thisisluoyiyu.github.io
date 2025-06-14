@@ -1,7 +1,7 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: 'https://yiurblog.top/',
+url: 'https://yiurblog.top/',
   lang: 'zh-CN',
   title: '云边的小旅店',
   author: {
@@ -53,29 +53,22 @@ export default defineSiteConfig({
     methods: [
       {
         name: '支付宝',
-        url: ' ',
+        url: '',
         color: '#00A3EE',
         icon: 'i-ri-alipay-line',
       },
       {
+        name: 'QQ 支付',
+        url: '',
+        color: '#12B7F5',
+        icon: 'i-ri-qq-line',
+      },
+      {
         name: '微信支付',
-        url: ' ',
+        url: '',
         color: '#2DC100',
         icon: 'i-ri-wechat-pay-line',
       },
     ],
   },
-  statistics: {
-    enable: true,
-    readTime: {
-      /**
-       * 阅读速度
-       */
-      speed: {
-        cn: 300,
-        en: 200,
-      },
-    },
-  },
-  codeHeightLimit: 300,
 })

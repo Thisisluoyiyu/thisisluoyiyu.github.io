@@ -1,7 +1,7 @@
 ---
 title: 我的小伙伴们
 keywords: 链接
-description: 云游的小伙伴们
+description: 我的小伙伴们
 links:
   - url: https://blog.cxzlw.top/
     avatar: https://blog.cxzlw.top/favicon.ico

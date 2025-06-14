@@ -14,17 +14,19 @@ export default defineValaxyConfig<UserThemeConfig>({
 
   theme: 'yun',
 
-  themeConfig: {
+   themeConfig: {
     banner: {
       enable: true,
       title: '云边的小旅店',
     },
+	
     bg_image: {
       enable: true,
       url: 'https://yiurblog.top/background.jpg',
       dark: 'https://yiurblog.top/background.jpg',
       opacity: 0.7
     },
+
     pages: [
       {
         name: '我的小伙伴们',
@@ -33,7 +35,7 @@ export default defineValaxyConfig<UserThemeConfig>({
         color: 'dodgerblue',
       },
       {
-        name: '可爱的女孩子',
+        name: '喜欢的女孩子',
         url: '/girls/',
         icon: 'i-ri-women-line',
         color: 'hotpink',
