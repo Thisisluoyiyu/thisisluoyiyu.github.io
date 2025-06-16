@@ -6,7 +6,7 @@ url: 'https://yiurblog.top/',
   title: '云边的小旅店',
   author: {
     name: '洛忆雨Yiur',
-	  avatar: 'https://www.yiurblog.top/head.png',
+	  avatar: 'https://www.yiurblog.top/head.jpg',
   },
   subtitle: '',
   description: '无人相伴的路，惝恍迷离的舞',
