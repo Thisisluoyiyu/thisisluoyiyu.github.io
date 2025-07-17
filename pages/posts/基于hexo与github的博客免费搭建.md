@@ -85,10 +85,16 @@ git config --global user.email "你的Gubith注册邮箱"
 cd ~/.ssh
 ```
 
-生成key
+如果显示没有这个文件的话可以使用下面命令创建一个.ssh文件
 
 ```
-ssh-keygen -t ra -C"你的Gubith注册邮箱"
+mkdir -p ~/.ssh
+```
+
+然后生成key
+
+```
+ssh-keygen -t rsa -C"你的Gubith注册邮箱"
 ```
 
 此处一直回车即可，然后在 ```C:\用户\用户名 ``` 的目录下，找到文件``` id_rsa.put ``` 并使用记事本打开，复制其中的所有字符
