@@ -38,6 +38,13 @@ links:
     desc: 
     email: 
     color: "#FFB6C1"
+  - url: https://tenchsu.com/
+    avatar: http://tenchsu.com/wp-content/uploads/2025/06/Image_1749552664954.jpg
+    name: tenchsu
+    blog: tenchsuのblog
+    desc: 
+    email: 
+    color: "#808080"
 random: true
 ---
 
