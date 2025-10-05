@@ -44,7 +44,14 @@ links:
     blog: tenchsuのblog
     desc: 
     email: 
-    color: "#808080"
+    color: "#808080" 
+  - url: https://dorimu.cn/
+    avatar: https://i.dorimu.top/2025/01/31/679c7447bdedb.png
+    name: Dorimu
+    blog: Dorimuのblog
+    desc: 
+    email: 
+    color: "#0000FF"
 random: true
 ---
 
