@@ -34,7 +34,7 @@ url: 'https://yiurblog.top/',
     },
     {
       name: 'Twitter',
-      link: 'https://twitter.com/Luo_yiyu',
+      link: 'https://twitter.com/Project_Luo',
       icon: 'i-ri-twitter-x-fill',
       color: 'black',
     },
