@@ -31,13 +31,6 @@ links:
     desc: 
     email: 
     color: "#b854d4"
-  - url: https://www.mitaner.top
-    avatar: https://www.mitaner.top/images/head.jpg
-    name: 洛依羽Mitaner
-    blog: 不存在的旅店
-    desc: 
-    email: 
-    color: "#FFB6C1"
   - url: https://tenchsu.com/
     avatar: http://tenchsu.com/wp-content/uploads/2025/06/Image_1749552664954.jpg
     name: tenchsu
@@ -58,10 +51,9 @@ links:
     blog: Hikaru Lab
     desc: 即使是人造的记忆，也有它存在的价值
     email: 
-    color: "#FFFFFF"
+    color: "#FFB6C1"
 random: true
 ---
 
 <YunLinks :links="frontmatter.links" :random="frontmatter.random" />
-
 
