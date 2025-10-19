@@ -52,6 +52,13 @@ links:
     desc: 
     email: 
     color: "#0000FF"
+  - url: https://www.mengxiblog.top/
+    avatar: https://img-cn.static.isla.fan/2025/10/19/68f4824b7c228.png
+    name: HikaruQwQ
+    blog: Hikaru Lab
+    desc: 即使是人造的记忆，也有它存在的价值
+    email: 
+    color: "#FFFFFF"
 random: true
 ---
 
@@ -59,3 +66,4 @@ random: true
 
 
 
+HikaruQwQ: 10-19 14:23:40 Name: Hikaru Lab Desc: 即使是人造的记忆，也有它存在的价值 Link: https://www.mengxiblog.top/ Avatar: https://img-cn.static.isla.fan/2025/10/19/68f4824b7c228.png 起こらない半夏: 10-19 14:24:55 @CelestialSayuki 不止一个可以薅我记得
