@@ -1,0 +1,27 @@
+/* Auto-loaded by Valaxy: define global CSS variables here */
+:root {
+  /* Theme primitives */
+  --primary: #7c3aed; /* 主色：可改成你的品牌色 */
+  --radius-card: 20px; /* 更明显的圆角 */
+  --radius-inner: 14px; /* 内层面板圆角 */
+
+  /* Card visuals */
+  --card-bg: rgba(255, 255, 255, 0.6);
+  --card-bg-dark: rgba(23, 23, 23, 0.6);
+  --card-border: rgba(0, 0, 0, 0.06);
+  --card-border-dark: #2a2a2a;
+  --card-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 10px 32px rgba(0, 0, 0, 0.12);
+  /* 移除文章卡片上的黑色遮罩 */
+  --cover-overlay: none;
+
+  /* Layout */
+  --post-grid-gap: 16px;
+  --post-padding: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-border: var(--card-border-dark);
+  }
+}

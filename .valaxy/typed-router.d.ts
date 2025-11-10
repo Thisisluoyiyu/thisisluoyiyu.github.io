@@ -41,6 +41,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/另世我': RouteRecordInfo<'/posts/另世我', '/posts/另世我', Record<never, never>, Record<never, never>>,
     '/posts/诗（2023）': RouteRecordInfo<'/posts/诗（2023）', '/posts/诗（2023）', Record<never, never>, Record<never, never>>,
     '/posts/诗（2024）': RouteRecordInfo<'/posts/诗（2024）', '/posts/诗（2024）', Record<never, never>, Record<never, never>>,
+    '/posts/使用wsl2装载debian': RouteRecordInfo<'/posts/使用wsl2装载debian', '/posts/使用wsl2装载debian', Record<never, never>, Record<never, never>>,
     '/posts/无题': RouteRecordInfo<'/posts/无题', '/posts/无题', Record<never, never>, Record<never, never>>,
     '/posts/无言': RouteRecordInfo<'/posts/无言', '/posts/无言', Record<never, never>, Record<never, never>>,
     '/posts/严重的焦虑与抑郁': RouteRecordInfo<'/posts/严重的焦虑与抑郁', '/posts/严重的焦虑与抑郁', Record<never, never>, Record<never, never>>,

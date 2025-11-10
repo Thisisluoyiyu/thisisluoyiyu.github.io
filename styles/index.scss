@@ -1,1 +1,271 @@
 // you can custom css here
+// you can custom css here
+/* 变量由 styles/vars.css 提供，避免使用已弃用的 @import */
+
+/*
+	文章卡片美化：
+	- 玻璃拟态卡片背景 + 柔和阴影
+	- 更圆润的圆角
+	- hover 稍许上移与阴影增强
+	- 标题、摘要与元信息的层级与可读性优化
+	- 响应式网格留白与间距
+*/
+
+/* 容器网格（作为兜底，不会破坏主题原布局，仅在选择器命中时生效） */
+.va-posts, .posts, .post-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: var(--post-grid-gap);
+	align-items: stretch;
+}
+
+/* 卡片本体（覆盖常见选择器；根据主题类名自动命中） */
+
+.va-card, .post-card, .post { 
+	position: relative;
+	border-radius: var(--radius-card, 20px);
+	border: 1px solid var(--card-border);
+	background: transparent; /* 由封面图铺满，内容区再做半透明面板 */
+	box-shadow: var(--card-shadow);
+	transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease, background .25s ease;
+	overflow: hidden;
+}
+
+/* 暗色模式下卡片背景由内容面板控制，此处无需额外设置 */
+
+.va-card:hover, .post-card:hover, .post:hover {
+	transform: translateY(-3px);
+	box-shadow: var(--card-shadow-hover);
+	border-color: color-mix(in oklab, var(--primary) 30%, var(--card-border));
+}
+
+/* 卡片内边距容器（半透明内容面板，置于封面之上） */
+.va-card .content, .post-card .content, .post .post-content {
+	position: relative;
+	padding: var(--post-padding);
+	margin: 10px;
+	border-radius: var(--radius-inner);
+	background: var(--card-bg);
+	backdrop-filter: none;
+  z-index: 1;
+}
+.dark .va-card .content, .dark .post-card .content, .dark .post .post-content {
+	background: var(--card-bg-dark);
+}
+
+/* 封面图占满整个卡片 */
+.va-card .cover, .post-card .cover, .post .post-cover {
+	position: absolute;
+	inset: 0;
+	overflow: hidden;
+  z-index: 0;
+}
+.va-card .cover::after, .post-card .cover::after, .post .post-cover::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: var(--cover-overlay);
+}
+.va-card .cover img, .post-card .cover img, .post .post-cover img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform .35s ease;
+}
+.va-card:hover .cover img, .post-card:hover .cover img, .post:hover .post-cover img {
+	transform: scale(1.04);
+}
+
+/* 标题与交互区域 */
+.va-card .title, .post-card .post-title, .post .post-title {
+	margin: 6px 0 4px;
+	font-weight: 700;
+	font-size: 1.05rem;
+	line-height: 1.35;
+}
+.va-card .title a, .post-card .post-title a, .post .post-title a {
+	color: inherit;
+	text-decoration: none;
+	background: linear-gradient(transparent 70%, color-mix(in oklab, var(--primary) 35%, transparent) 0);
+	background-size: 100% 200%;
+	background-position: 0 100%;
+	transition: background-position .25s ease, color .25s ease;
+}
+.va-card:hover .title a, .post-card:hover .post-title a, .post:hover .post-title a {
+	background-position: 0 0;
+}
+
+/* 摘要 */
+.va-card .excerpt, .post-card .post-excerpt, .post .post-excerpt {
+	color: rgba(0,0,0,.72);
+	line-height: 1.65;
+	font-size: .95rem;
+}
+.dark .va-card .excerpt, .dark .post-card .post-excerpt, .dark .post .post-excerpt {
+	color: rgba(255,255,255,.72);
+}
+
+/* 元信息（日期、分类、标签） */
+.va-card .meta, .post-card .post-meta, .post .post-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 10px;
+	align-items: center;
+	margin-top: 8px;
+	font-size: .85rem;
+	opacity: .9;
+}
+.va-card .meta a, .post-card .post-meta a, .post .post-meta a {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+/* 标签 pill 样式（如果主题输出标签为 a 或 span） */
+.va-card .tag, .post-card .tag, .post .tag {
+	padding: 2px 8px;
+	border-radius: 999px;
+	border: 1px solid color-mix(in oklab, var(--primary) 35%, transparent);
+	color: color-mix(in oklab, var(--primary) 90%, black);
+	background: color-mix(in oklab, var(--primary) 6%, transparent);
+}
+
+/* 按钮/更多链接区域 */
+.va-card .actions, .post-card .post-actions, .post .post-actions {
+	margin-top: 10px;
+	display: flex;
+	gap: 10px;
+}
+.va-card .actions .btn, .post-card .post-actions .btn, .post .post-actions .btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 10px;
+	font-size: .9rem;
+	border-radius: 10px;
+	color: white;
+	background: var(--primary);
+	border: 1px solid transparent;
+	transition: filter .2s ease, transform .2s ease;
+}
+.va-card .actions .btn:hover, .post-card .post-actions .btn:hover, .post .post-actions .btn:hover {
+	filter: brightness(1.05);
+	transform: translateY(-1px);
+}
+
+/* 响应式微调 */
+@media (max-width: 640px) {
+	.va-posts, .posts, .post-list {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+}
+
+/* 针对 valaxy-theme-yun 的实际标记结构定向增强 */
+
+.yun-card.post-card-image {
+	position: relative;
+	border-radius: var(--radius-card, 20px) !important; /* 覆盖 rounded + fallback */
+	-webkit-mask-image: -webkit-radial-gradient(white, black); /* Safari 圆角裁剪兼容 */
+	mask-image: radial-gradient(circle, white, black); /* 标准属性 */
+	overflow: hidden; /* 确保封面裁剪与圆角一致 */
+	background: transparent;
+	border: 1px solid var(--card-border);
+	box-shadow: var(--card-shadow);
+	transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease;
+}
+.yun-card.post-card-image:hover {
+	transform: translateY(-3px);
+	box-shadow: var(--card-shadow-hover);
+	border-color: color-mix(in oklab, var(--primary) 30%, var(--card-border));
+}
+
+/* 封面铺满整个卡片 */
+.post-card-image .post-card-info {
+	position: relative;
+	min-height: 12rem; /* 兜底高度，可按需调整 */
+}
+.post-card-image .post-card-info img.cover {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: inherit; /* 继承父级圆角 */
+	z-index: 0;
+	transition: transform .35s ease;
+}
+.post-card-image:hover .post-card-info img.cover {
+	transform: scale(1.04);
+}
+.post-card-image .post-card-info::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: var(--cover-overlay);
+	z-index: 1;
+  border-radius: inherit;
+}
+
+/* 内容浮层（紧跟在封面 img 后的容器） */
+.post-card-image .post-card-info img.cover + div {
+	position: relative;
+	z-index: 2;
+	padding: var(--post-padding);
+	margin: 10px;
+	border-radius: var(--radius-inner);
+	background: var(--card-bg);
+	backdrop-filter: none;
+}
+.dark .post-card-image .post-card-info img.cover + div {
+	background: var(--card-bg-dark);
+}
+
+/* 移动端进一步优化 */
+@media (max-width: 640px) {
+	.yun-card.post-card-image {
+		border-radius: 16px !important;
+		transform: none !important;
+		box-shadow: 0 4px 14px rgba(0,0,0,.06);
+	}
+	.yun-card.post-card-image:hover {
+		transform: none;
+	}
+	.post-card-image .post-card-info {
+		min-height: 10.5rem;
+	}
+	.post-card-image .post-card-info img.cover + div {
+		margin: 8px;
+		padding: 12px;
+	}
+	.post-card-image .post-card-info img.cover + div .post-title-link .title {
+		font-size: 1.15rem;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		line-clamp: 2;
+		overflow: hidden;
+	}
+	.post-card-image .post-card-info .post-meta {
+		font-size: .75rem;
+		gap: 6px;
+	}
+
+	/* 移动端禁用图片缩放动效，避免滚动抖动 */
+	.post-card-image:hover .post-card-info img.cover {
+		transform: none;
+	}
+
+	/* 操作区与触控目标优化 */
+	.yun-card-actions {
+		padding: 8px 10px;
+	}
+	.yun-card-actions .post-category,
+	.yun-card-actions .post-tag {
+		min-height: 32px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 999px;
+	}
+}
