@@ -21,7 +21,7 @@ links:
     avatar: http://snowmiku-home.top/images/icon2.jpg
     name: 雪葱
     blog: 葱酱的幻想乡
-    desc: 会nya~的可爱葱酱
+    desc: nya nya的可爱葱酱
     email: 
     color: "#39C5BB"
   - url: https://n552aa.github.io/
@@ -52,6 +52,13 @@ links:
     desc: 即使是人造的记忆，也有它存在的价值
     email: 
     color: "#FFB6C1"
+  - url: https://starneko.com
+    avatar: https://starneko.com/img/Milk.jpg
+    name: 牛奶猫
+    blog: 牛奶猫的猎人笔记
+    desc: 小孩猫sensei~
+    email: 
+    color: "#1E90FF"
 random: true
 ---
 
