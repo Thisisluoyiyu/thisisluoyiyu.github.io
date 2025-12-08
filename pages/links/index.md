@@ -9,14 +9,14 @@ links:
     blog: 创新者老王的博客
     desc: 超级厉害的师傅！
     email: cxz.lwnb@gmail.com
-    color: "#0078e7"
+    color: "#6058d9"
   - url: https://orangestd.cn
     avatar: https://orangestd.cn/images/avatar.png
     name: 橙子
     blog: 橙子の小站
     desc: Enjoy freedom
     email: 
-    color: "#6058d9"
+    color: "#FFA500"
   - url: https://snowmiku-home.top/
     avatar: http://snowmiku-home.top/images/icon2.jpg
     name: 雪葱
