@@ -59,6 +59,13 @@ links:
     desc: 小孩猫sensei~
     email: 
     color: "#1E90FF"
+  - url: https://xiongzikun0106.github.io/my-first-personal-webside/
+    avatar: https://xiongzikun0106.github.io/my-first-personal-webside/images/image01.jpg
+    name: 御坂鱼板
+    blog: 御坂鱼板的小站点
+    desc: 
+    email: 
+    color: "#FFFFFF"
 random: true
 ---
 
