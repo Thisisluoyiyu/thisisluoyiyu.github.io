@@ -66,6 +66,13 @@ links:
     desc: 
     email: 
     color: "#FFFFFF"
+  - url: https://www.hoshiroko.com
+    avatar: https://api.hoshiroko.com/img/avatar.jpg
+    name: 薄荷
+    blog: 薄荷の小屋
+    desc: 越是拼命往前伸手，渴望之物越是渐行渐远
+    email: 
+    color: "#00f9bb"
 random: true
 ---
 
