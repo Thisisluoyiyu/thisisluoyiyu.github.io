@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用wsl2装载debian
-tags: [Debian,wsl,windows,linxu]
+tags: [Debian,wsl,windows,linux]
 date: 2025-10-19 13:22:07
 categories: [技术]
 cover: https://www.yiurblog.top/cywl.jpg
