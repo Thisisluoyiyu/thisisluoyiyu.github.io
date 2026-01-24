@@ -1,7 +1,7 @@
 ---
 layout: post
 title: H3C NX30pro 新版固件（V100R010、V100R009）免拆机刷机
-tags: [刷机,路由器,linxu]
+tags: [刷机,路由器,Linxu]
 categories: [技术]
 date: 2026-01-21 17:47:02
 cover: https://www.yiurblog.top/cywl.jpg
@@ -184,14 +184,14 @@ touch "cfgmd5/firewall-$fwmd5"
 
 这样`firewall`的检验文件就改好了
 
-接下来先压缩文件回去
+接下来先保留全权限压缩文件回去
 
 ```
 cd ../..
 tar -czpf ../NX30Pro-config/NX30Pro.tar.gz *
 ```
 
-修改info的检验文件
+修改info的md5检验文件
 
 ```
 cd ../NX30Pro-config
@@ -199,7 +199,7 @@ cfmd5=$(md5sum NX30Pro.tar.gz | awk '{print $1}')
 echo -e "NX30ProV100R010\n$cfmd5" > NX30Pro.info
 ```
 
-再进行压缩
+再进行保留权限压缩
 
 ```
 tar -czpf ../NX30Pro-finished.cfg *
