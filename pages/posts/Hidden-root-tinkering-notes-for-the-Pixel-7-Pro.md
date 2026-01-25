@@ -11,9 +11,9 @@ categories: [技术]
 
 *由于Kernel需要先刷内核，但是我找到的内核文件并没有单独的boot.img文件，fastboot没法直接刷入，于是使用Kernel Flasher，而Kernel Flasher需要root,使用Magisk先行root。*
 
-# Magisk Root
+## Magisk Root
 
-## 修改init_boot.img
+#### 修改init_boot.img
 
 首先下载[Magisk](https://github.com/topjohnwu/Magisk),先安装在手机上，然后到[谷歌官网](https://developers.google.com/android/images?hl=zh-cn#cheetah)上下载手机对应版本的出场映像，我这里下载了16.0.0（BP4A.251205.006，2025 年 12 月）。
 
@@ -21,7 +21,7 @@ categories: [技术]
 
 打开手机上Magisk点击安装，选择刚刚传上来的init_boot.mig,在download目录下得到修改后的init_boot.img（我文件名叫magisk_patched-30600_B57KR.img），把这个修改后的文件传回电脑
 
-## 解锁Bootloader
+#### 解锁Bootloader
 
 打开Pixel的**设置**-**关于本机**-**Build号**然后连续点击七八次进入开发者模式，在**系统**-**开发者选项**打开开发者模式并且打开下面选项的解锁 Bootloader和 OEM 解锁开关。
 
@@ -53,7 +53,7 @@ categories: [技术]
 
 使用音量键选择到**Unlock the bootloader**，按电源键确认。(解锁BL手机会自动格式化，记得备份)
 
-## Root
+#### Root
 
 然后把magisk_patched-30600_B57KR.img放到SDK工具目录（platform-tools）下，刷入修改后的内核
 
@@ -69,15 +69,15 @@ categories: [技术]
 
 重启后打开Magisk,这时候可能会对系统进行修复选项，确认后自动重启一次我们便得到了Magisk root
 
-# Kernel Root
+## Kernel Root
 
-## 刷入内核
+#### 刷入内核
 
 我们先下载[Kernel Flasher](https://github.com/fatalcoder524/KernelFlasher/),再用Magisk给予root权限，打开Kernel Flasher，设备选项下查看**内核版本号**和插槽后缀，然后我们去下载[内核](https://github.com/WildKernels/GKI_KernelSU_SUSFS/releases)，一定要下载对应内核版本号！！！
 
 把下载文件传入手机，打开Kernel Flashe，插槽后缀是什么就选择哪个插槽（a or b），查看-刷入-刷入AK3压缩包，然后一定不要先重启，去下载Kernel，我这里使用的是[KernelSU Next](https://github.com/KernelSU-Next/KernelSU-Next)，先安装到手机上。
 
-## 卸载Magisk
+#### 卸载Magisk
 
 由于Magisk会和Kernel产生莫名其妙的冲突，我们要先卸载Magisk,依旧是SDK工具,先进入BL界面
 
@@ -99,7 +99,7 @@ categories: [技术]
 
 要是重启后能进入手机基本上算成功了，打开Kernel，显示工作中即root成功
 
-## SUS与Tricky
+#### SUS与Tricky
 
 先下载[SUSFS](https://github.com/sidex15/susfs4ksu-module)，与[Tricky Store](https://github.com/5ec1cff/TrickyStore)还有[Tricky Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List)
 

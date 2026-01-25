@@ -15,7 +15,7 @@ cover: https://www.yiurblog.top/cywl.jpg
 
 此方案是通过备份原厂固件，对固件逆向后添加代码打开telnet口再打开SSH刷入文件
 
-# 基础准备
+## 基础准备
 
 需要的基础工具有[WinSCP](https://winscp.net/eng/index.php)和[PuTTY](https://winscp.net/eng/index.php)*（似乎不少人喜欢使用[Termius](https://termius.com/),不过我觉得需要注册比较没法，所以使用这种更轻量化开源软件）*
 
@@ -25,7 +25,8 @@ cover: https://www.yiurblog.top/cywl.jpg
 
 最后是准备刷写的固件，可以根据需求选择，不过记得匹配一下uboot版本，要不然会变砖，这里扔一个固件，[来源](https://www.right.com.cn/forum/thread-8291820-1-1.html)
 链接：https://pan.quark.cn/s/0e169171cd7b?pwd=NF7h
-# 逆向原厂固件打开telnet
+
+## 逆向原厂固件打开telnet
 
 首先进入192.168.124.1的原厂后台，再选择 更多- 设备管理- 设备管理 - 配置备份，获得`NX30Pro.cfg` 文件
 
@@ -217,7 +218,7 @@ python xor.py NX30Pro-finished.cfg
 
 ~~（一个手贱让我耗费八百年）~~
 
-# 开启 SSH
+## 开启SSH
 
 这一步请确保路由器能正常联网。打开PuTTY，在Host Name输入`192.168.124.1`，Port为`7788`，要记得Connection type选择`Other:Telnet`
 
@@ -230,6 +231,8 @@ opkg install /tmp/dropbear.ipk
 /etc/init.d/dropbear start
 ```
 
+## 备份原厂固件
+
 然后先备份一个路由器原厂文件
 
 ```
@@ -239,6 +242,8 @@ dd if=/dev/mtd5 of=/tmp/backup.img
 然后打开 WinSCP，文件协议选择 `SCP`，主机名 `192.168.124.1`，端口号 `22`，用户名 `root`，密码`admin`
 
 登录后，将右侧 NX30Pro tmp 路径下的 backup.img 文件拖到左边电脑上保存，这是官方固件的备份
+
+## 写入新固件
 
 将下载好的 uboot.bin 文件从左边电脑拖进右侧路由器 tmp 路径下
 
@@ -264,6 +269,8 @@ mtd write /tmp/uboot.bin FIP
 然后在浏览器打开  192.168.1.1 就能打开 uboot 后台
 
 选择下载好的 NX30pro 的固件，upload 上传后，update 更新，写入即可，完成后会显示成功不过依旧会转圈（~~有傻子没看字，一直转圈以为变砖了）~~
+
+## openwrt
 
 路由器自动重启后就进入了openwrt，台地址 192.168.6.1，用户名 root，密码 password
 
