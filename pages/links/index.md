@@ -73,6 +73,13 @@ links:
     desc: 越是拼命往前伸手，渴望之物越是渐行渐远
     email: 
     color: "#00f9bb"
+  - url: http://misakae.live/
+    avatar: http://misakae.live/_next/image?url=%2Fhead.jpg&w=256&q=75
+    name: MisakaE
+    blog: MisakaE
+    desc: 天明明是这么的蓝 前途却是一片黑暗
+    email: 
+    color: "#ecb653"
 random: true
 ---
 
