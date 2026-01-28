@@ -74,8 +74,7 @@ links:
     email: 
     color: "#00f9bb"
   - url: http://misakae.live/
-    avatar: http://misakae.live/_next/image?url=%2Fhead.jpg&w=256&q=75
-    name: MisakaE
+    avatar: http://misakae.live/head.jpg
     blog: MisakaE
     desc: 天明明是这么的蓝 前途却是一片黑暗
     email: 
