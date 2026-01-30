@@ -72,11 +72,11 @@ hexo s
 更改yourname和youremail
 
 ```
-git config --global user.name "你的Gubith用户名"
+git config --global user.name "你的Github用户名"
 ```
 
 ```
-git config --global user.email "你的Gubith注册邮箱"
+git config --global user.email "你的Github注册邮箱"
 ```
 
 依旧使用git，首先进入.ssh文件
